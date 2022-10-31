@@ -6,7 +6,7 @@
 - 作者：Yice Zhang∗, Yifan Yang∗, Yihui Li, Bin Liang, Shiwei Chen, Yixue Dang, Ming Yang, and Ruifeng Xu
 - 会议：EMNLP-2022 Main (Long)
 
-## 方法简介
+## 工作简介
 
 ### ASTE任务
 
@@ -28,7 +28,7 @@
 
 以往的工作尝试使用Span-based的方法来解决关系不一致的问题。这是一种可行的思路。但是该方法忽略了细粒度的词级别的信息，这正是表格填充方法的优点。
 
-## 本文提出方法的简介
+### 本文提出的方法
 
 本文为了解决上述的两个问题，提出了边界驱动的表格填充方法（Boundary-Driven Table-Filling）。如下图所示，该方法将方面关系三元组转为二维表中的一个关系区域，因而将ASTE任务转化为关系区域的定位和分类。对关系区域整体进行分类可以解决了关系不一致的问题，那些边界错误的关系区域也可以通过将其分类为Invaild而移除。
 
@@ -48,7 +48,7 @@
 
 本方法的主要实验结果如下表，详细的分析见论文。
 
-<div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199048765-b85e7c6a-04f2-4d40-aec5-2ccf73709f81.png" alt="Result" width="40%" /></div>
+<div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199048765-b85e7c6a-04f2-4d40-aec5-2ccf73709f81.png" alt="Result" width="80%" /></div>
 
 ## 如何运行
 ### Requirements
