@@ -96,7 +96,9 @@
 
 ### 运行代码
 
-在`code`目录下运行 `bash/aste_14res.sh`。
+在`code`目录下
+- 运行`chmod +x bash/*`。
+- 运行`bash/aste_14res.sh`。
 
 ## 如有问题请在`issues`提出，或者联系我
 
