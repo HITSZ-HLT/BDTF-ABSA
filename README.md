@@ -98,7 +98,13 @@
 
 在`code`目录下
 - 运行`chmod +x bash/*`。
-- 运行`bash/aste_14res.sh`。
+- 运行`bash/aste_14lap.sh`。
+
+下面是aste_14lap.sh在随机种子取40时运行的结果。请注意文章发布的性能都是在5个随机种子下运行，然后取平均的结果，这与单次运行可能存在一些出入。
+
+<div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199077758-21eeedc2-c4f2-49e4-a332-813a000d9047.png" alt="Result" width="60%" /></div>
+
+
 
 ## 如有问题请在`issues`提出，或者联系我
 
