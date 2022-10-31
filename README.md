@@ -11,10 +11,10 @@
 ### ASTE任务
 
 本文要解决的是Aspect-Based Sentiment Analysis(ABSA)问题中的Aspect Sentiment Triplet Extraction(ASTE)任务。
-如下图所示，ASTE的目的是抽取用户评论中表达观点的方面情感三元组，一个元组包含三个部分
-- Aspect Term: 情感所针对的目标对象，一般是被评价实体（餐馆或者产品）的某个方面项，常被称作方面术语、方面词、属性词等
-- Opinion Term: 具体表达情感的词或短语，常被称作情感术语、情感词等
-- Sentiment Polarity: 用户针对Aspect Term所表达的情感倾向，类别空间为`{POS, NEG, NEU}`
+如下图所示，ASTE的目的是抽取用户评论中表达观点的方面情感三元组，一个元组包含三个部分：
+- Aspect Term: 情感所针对的目标对象，一般是被评价实体（餐馆或者产品）的某个方面项，常被称作方面术语、方面词、属性词等。
+- Opinion Term: 具体表达情感的词或短语，常被称作情感术语、情感词等。
+- Sentiment Polarity: 用户针对Aspect Term所表达的情感倾向，类别空间为`{POS, NEG, NEU}`。
 
 <div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199022562-2cca1c06-b91e-4e4b-8bf0-20273a16821e.png" alt="ASTE" width="50%" /></div>
 
@@ -50,9 +50,56 @@
 
 <div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199048765-b85e7c6a-04f2-4d40-aec5-2ccf73709f81.png" alt="Result" width="80%" /></div>
 
-## 如何运行
-### Requirements
-### 
+## 运行代码
+### 环境配置
 
+- transformers==4.15.0
+- pytorch==1.7.1
+- einops=0.4.0
+- torchmetrics==0.7.0
+- tntorch==1.0.1
+- pytorch-lightning==1.3.5
+
+### 代码结构
+
+```
+├── code
+│   ├── utils
+│   │   ├── __init__.py
+│   │   ├── aste_datamodule.py
+|   |   └── aste_result.py
+│   ├── model
+│   │   ├── seq2mat.py
+│   │   ├── table.py
+│   │   ├── table_encoder
+│   │   |   └── resnet.py
+|   |   └── bdtf_model.py
+|   ├── aste_train.py
+|   └── bash
+│       ├── aste.sh
+│       ├── aste_14res.sh
+│       ├── aste_14lap.sh
+│       ├── aste_15res.sh
+|       └── aste_16res.sh
+└── data
+    └── aste_data_bert
+        └── V1
+        │   ├── 14res
+        |   │   ├── train.json
+        |   │   ├── dev.json
+        |   │   └── test.json
+        │   ├── 14lap/...
+        │   ├── 15res/...
+        |   └── 16res/...
+        └── V2/...
+```
+
+### 运行代码
+
+在`code`目录下运行 `bash/aste_14res.sh`。
+
+## 如有问题请在`issues`提出，或者联系我
+
+- email: `zhangyc_hit@163.com`
 
 <!-- ## Citation -->
