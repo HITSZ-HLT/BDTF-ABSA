@@ -83,7 +83,7 @@
 |       └── aste_16res.sh
 └── data
     └── aste_data_bert
-        └── V1
+        ├── V1
         │   ├── 14res
         |   │   ├── train.json
         |   │   ├── dev.json
@@ -100,7 +100,7 @@
 - 运行`chmod +x bash/*`。
 - 运行`bash/aste_14lap.sh`。
 
-下面是aste_14lap.sh在随机种子取40时运行的结果。请注意，文章发布的性能都是在5个随机种子下运行然后取平均的结果，这与单次运行可能存在一些出入。
+下面是aste_14lap.sh运行的结果。这里随机种子取的是40，计算设备为A100。请注意，文章发布的性能都是在5个随机种子下运行然后取平均的结果，这与单次运行可能存在一些出入。
 
 <div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199077758-21eeedc2-c4f2-49e4-a332-813a000d9047.png" alt="Result" width="60%" /></div>
 
