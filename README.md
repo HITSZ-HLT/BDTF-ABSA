@@ -22,7 +22,7 @@
 
 以往的方法将本任务建模为一个表格填充问题（table-filling problem）。如下图所示，二维表中的每个元素为词与词之间的关系。该方法首先通过对角线抽取aspect和opinion，然后通过aspect和opinion定位对应的关系区域，通过投票的方法是确定aspect和opinion之间的关系。该方法存在诸多问题。比较明显的问题有两个：
 1. 关系不一致：将aspect和opinion之间的关系分解为词与词之间的关系，这会带来潜在的关系不一致问题。
-2. 边界不敏感：如果aspect或者opinion的边界出现了小错误，二者的关系预测的结果大概率不会改变，这就是的模型产生了边界错误的输出，如('dogs', 'top notch', `POS`)。
+2. 边界不敏感：如果aspect或者opinion的边界出现了小错误，二者关系预测的结果大概率不会改变，这就使得模型产生了边界错误的输出，如('dogs', 'top notch', `POS`)。
 
 <div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199043065-86775e70-6027-4732-99b3-c49c0fd30e30.png" alt="GTS" width="50%" /></div>
 
@@ -100,7 +100,7 @@
 - 运行`chmod +x bash/*`。
 - 运行`bash/aste_14lap.sh`。
 
-下面是aste_14lap.sh在随机种子取40时运行的结果。请注意文章发布的性能都是在5个随机种子下运行，然后取平均的结果，这与单次运行可能存在一些出入。
+下面是aste_14lap.sh在随机种子取40时运行的结果。请注意，文章发布的性能都是在5个随机种子下运行然后取平均的结果，这与单次运行可能存在一些出入。
 
 <div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199077758-21eeedc2-c4f2-49e4-a332-813a000d9047.png" alt="Result" width="60%" /></div>
 
