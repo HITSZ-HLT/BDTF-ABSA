@@ -8,7 +8,7 @@ This repository releases the code of the following paper:
 - Authors: Yice Zhang∗, Yifan Yang∗, Yihui Li, Bin Liang, Shiwei Chen, Yixue Dang, Ming Yang, and Ruifeng Xu
 - Conference: EMNLP-2022 Main (Long)
 
-## Introduction
+## Brief Introduction of Our Paper
 
 ### The ASTE Task
 
