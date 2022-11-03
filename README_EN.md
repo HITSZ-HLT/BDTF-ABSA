@@ -50,7 +50,7 @@ This consists of three parts:
 
 The relation representations of each two words in the review together form a 2D relation matrix, which serves as the table representation for BDTF.
 
-The proposed approach is briefly present in the figure below.
+The proposed approach is briefly presented in the figure below.
 
 <div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199048478-82c2c1ff-1b10-41aa-8071-5f4ad6197559.png" alt="Model" width="40%" /></div>
 
@@ -117,7 +117,7 @@ Result of aste_14lap.sh (Random seed is set to be 40 and the computing device is
 
 Result of aste_14lap.sh (Random seed is set to be 40 and the computing device is V100):
 
-<div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199708850-5d1ff9a0-4fa2-4c51-afff-813377415ae1.png" alt="Result2" width="75%" /></div>
+<div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199708850-5d1ff9a0-4fa2-4c51-afff-813377415ae1.png" alt="Result2" width="85%" /></div>
 
 Note that the performance posted in the paper is the average results of 5 run with 5 different random seeds, which has some differences from a single run.
 
