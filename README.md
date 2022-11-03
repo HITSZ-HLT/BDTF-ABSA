@@ -1,3 +1,6 @@
+[**中文说明**](https://github.com/HITSZ-HLT/BDTF-ASTE/) | [**English**](https://github.com/HITSZ-HLT/BDTF-ASTE/blob/master/README_EN.md)
+
+
 # BDTF-ASTE
 
 本仓库开源了以下论文的代码：
@@ -100,11 +103,15 @@
 - 运行`chmod +x bash/*`。
 - 运行`bash/aste_14lap.sh`。
 
-下面是aste_14lap.sh运行的结果。这里随机种子取的是40，计算设备为A100。请注意，文章发布的性能都是在5个随机种子下运行然后取平均的结果，这与单次运行可能存在一些出入。
+下面是aste_14lap.sh运行的结果。这里随机种子取的是40，计算设备为A100。
 
 <div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199077758-21eeedc2-c4f2-49e4-a332-813a000d9047.png" alt="Result" width="60%" /></div>
 
+在V100上跑aste_14lap.sh，结果如下。
 
+<div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199708850-5d1ff9a0-4fa2-4c51-afff-813377415ae1.png" alt="Result2" width="75%" /></div>
+
+请注意，文章发布的性能都是在5个随机种子下运行然后取平均的结果，这与单次运行可能存在一些出入。
 
 ## 如有问题请在`issues`提出，或者联系我
 
