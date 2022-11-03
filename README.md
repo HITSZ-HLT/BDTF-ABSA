@@ -109,7 +109,7 @@
 
 在V100上跑aste_14lap.sh，结果如下。
 
-<div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199708850-5d1ff9a0-4fa2-4c51-afff-813377415ae1.png" alt="Result2" width="75%" /></div>
+<div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199708850-5d1ff9a0-4fa2-4c51-afff-813377415ae1.png" alt="Result2" width="85%" /></div>
 
 请注意，文章发布的性能都是在5个随机种子下运行然后取平均的结果，这与单次运行可能存在一些出入。
 
