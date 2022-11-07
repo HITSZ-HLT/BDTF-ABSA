@@ -29,7 +29,7 @@ This formalization enables joint learning of different subtasks in ASTE, achievi
 
 However, the previous table formalization suffers from relation inconsistency and boundary insensitivity when dealing with multi-word aspect terms and opinion terms. It decomposes the relation between an aspect term and an opinion term into the relations between the corresponding aspect words and opinion words.
 In other words, a term-level relation is represented by several wordlevel relation tags. The relation tags in the table are assigned independently, which leads to potential inconsistencies in the predictions of the wordlevel relations. 
-In addition, when there are minor boundary errors in the aspect term or opinion term, the voting result for the term-level relation may stay unchanged, encouraging the model to produce wrong predictions. Reseachers try to solve this problem through a span-based method, but their method discards fine-grained word-level information, which is the advantage of the table-filling approach.
+In addition, when there are minor boundary errors in the aspect term or opinion term, the voting result for the term-level relation may stay unchanged, encouraging the model to produce wrong predictions. Researchers try to solve this problem through a span-based method, but their method discards fine-grained word-level information, which is the advantage of the table-filling approach.
 
 <div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199043065-86775e70-6027-4732-99b3-c49c0fd30e30.png" alt="GTS" width="50%" /></div>
 
