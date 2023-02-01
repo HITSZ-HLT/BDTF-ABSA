@@ -41,12 +41,17 @@ class InferenceLayer(nn.Module):
         self.cls_linear_E = nn.Linear(768,1)
 
     def span_pruning(self, pred, z, attention_mask):
+        mask_length = attention_mask.sum(dim=1)-2
         length = ((attention_mask.sum(dim=1)-2)*z).long()
         length[length<5] = 5
+        max_length = mask_length**2
+        for i in range(length.shape[0]):
+            if length[i] > max_length[i]:
+                length[i] = max_length[i]
         batch_size = attention_mask.shape[0]
         pred_sort,_ = pred.view(batch_size, -1).sort(descending=True)
         batchs = torch.arange(batch_size).to('cuda')
-        topkth = pred_sort[batchs, length-1].unsqueeze(1)
+        topkth = pred_sort[batchs, length-1].unsqueeze(1)        
         return pred >= (topkth.view(batch_size,1,1))
 
     def forward(self, table, attention_mask, table_labels_S, table_labels_E):      
