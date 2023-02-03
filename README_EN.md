@@ -4,7 +4,7 @@
 
 This repository releases the code of the following paper:
 
-- Title: [Boundary-Driven Table-Filling for Aspect Sentiment Triplet Extraction](https://preview.aclanthology.org/emnlp-22-ingestion/2022.emnlp-main.435/)
+- Title: [Boundary-Driven Table-Filling for Aspect Sentiment Triplet Extraction](https://aclanthology.org/2022.emnlp-main.435/)
 - Authors: Yice Zhang∗, Yifan Yang∗, Yihui Li, Bin Liang, Shiwei Chen, Yixue Dang, Ming Yang, and Ruifeng Xu
 - Conference: EMNLP-2022 Main (Long)
 
