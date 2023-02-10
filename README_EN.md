@@ -40,7 +40,8 @@ In BDTF, a triplet is represented as a relation region in the 2D table, which is
 In this way, it extracts triplets by directly detecting and classifying the relation regions in a 2D table. 
 Classification over the entire relation region ensures relation consistency, and those relation regions with boundary errors can be removed by being classified as invalid.
 
-<div align="center"> <img src="https://user-images.githubusercontent.com/9134454/199046656-e45f508e-b196-4ce4-a649-19cd4582dee0.png" alt="BDTF" width="50%" /></div>
+<div align="center"> <img src="https://user-images.githubusercontent.com/9134454/218067809-c578dcb9-633b-4862-9bf0-48c494e8847d.png" alt="BDTF" width="50%" /></div>
+
 
 In addition, this paper also develops an effective relation representation learning approach to learn the table representation. 
 This consists of three parts: 
